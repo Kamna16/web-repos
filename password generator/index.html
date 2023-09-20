@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="main_card">
+            <h1>Password Generator</h1>
+            <div class="container">
+                <div class="text">
+                    <input type="text" placeholder="Password" class="display" readonly data-passwordDisplay>
+                    <button>
+                        <span data-copyMsg><i class="fa-regular fa-copy"></i></span>
+                    </button>
+                </div>
+
+                <div class="details">
+                    <!-- password length -->
+                    <div class="length">
+                        <p>Password Length</p>
+                        <input type="number">
+                    </div>
+                    <!--  slider-range -->
+                    <input type="range" name="slider" class="slider" min="1" max="20" step="1" length-slider>
+                    <!-- checkboxes -->
+                    <div class="checkboxes">
+                        <div>
+                            <input type="checkbox" name="box1">
+                            <label for="box1">Include Uppercase Letters</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="box2">
+                            <label for="box2">Include Lowercase letters</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="box3">
+                            <label for="box3">Include Numbers</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="box4">
+                            <label for="box4">Include Symbols</label>
+                        </div>
+
+                    </div>
+                    <div class="strength-container">
+                        <p>Strength</p>
+                        <div class="color"></div>
+                    </div>
+                    <div class="button" strength-indicator>
+                        <button>Generate Password</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

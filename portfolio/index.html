@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lobster&family=Oswald:wght@300;400;500&family=PT+Serif&family=Poppins:wght@400;600&family=Roboto:ital,wght@1,300&family=Sofia+Sans+Condensed:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="main">
+        <header>
+            <nav class="desktop-navbar">
+                <!-- <div class="left"><a href=""><img src="./assets/logo.png" alt="LOGO" class="logo"></a></div> -->
+                <div class="left"><h1>KB</h1></div>
+                <div class="right">
+                    <ul>
+                        <a href="/Home"><li>Home</li></a>
+                        <a href="/About"><li>About</li></a>
+                        <a href="/Projects"><li>Projects</li></a>
+                        <a href="/services"><li>Services</li></a>
+                        <a href="/contact"><li class="contact">Contact</li></a>
+                    </ul>
+                </div>
+            </nav>
+            <nav class="hamburger-nav">
+                <div class="mobile-navbar">
+                    <h1 class="logo">KB</h1>
+                    <div class="hamburger-icon" onclick="toggleMenu()">
+                        <span><i class="fa-solid fa-bars"></i></span>
+                    </div>
+                </div>
+                
+                <div class="menu-links">
+                    <ul>
+                        <a href="/Home" onclick="toggleMenu()"><li>Home</li></a>
+                        <a href="/About" onclick="toggleMenu()"><li>About</li></a>
+                        <a href="/Projects" onclick="toggleMenu()"><li>Projects</li></a>
+                        <a href="/services" onclick="toggleMenu()"><li>Services</li></a>
+                        <a href="/contact" onclick="toggleMenu()"><li class="contact">Contact</li></a>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="firstsection">
+                <div class="left-main" id="sections">
+                    <div>Hello, It's me</div>
+                    <div class="purple">Kamna Bhadoriya</div>
+                    <div>and I am a <span class="role"></span></div>
+                    <div class="icons">
+                        <a class="insta icon" href="https://www.instagram.com/kamna_bhadoriya/">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a class="linkedin icon" href="https://www.linkedin.com/in/kamna-bhadoriya-05597b24a/">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a class="github icon" href="https://github.com/Kamna16">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <button class="cv">DownLoad CV</button>
+                    </div>
+                </div>
+                <div class="right-main" id="sections">
+                    <div class="image">
+                        <img src="./assets/homeimg-removebg-preview.png" alt="">
+                    </div>
+                </div>
+            </div>
+        
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"> </script>
+    <script>
+        var typeData = new Typed(".role", {
+            strings: [
+        "MERN Stack Developer",
+        "Web Developer",
+        "Front-End Developer",
+        "Coder",
+        ],
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 80,
+        backDelay: 1000,
+          });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
